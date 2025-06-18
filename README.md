@@ -2,11 +2,6 @@
 
 EcoVoltify is a web-based e-commerce platform focused on promoting sustainable living through the sale of low-carbon and energy-efficient products. The system combines clean design, informative content, and socially responsible features like tree plantation funding and carbon savings tracking to create a meaningful impact.
 
-## 🔗 Live Demo
-*(Optional: Add live project link here if deployed, e.g., GitHub Pages or localhost demo video)*
-
----
-
 ## 📌 Key Features
 
 - 🛒 **E-commerce Functionality:** Add to cart, checkout, login/signup, and secure payments
