@@ -2,6 +2,10 @@
 
 EcoVoltify is a web-based e-commerce platform focused on promoting sustainable living through the sale of low-carbon and energy-efficient products. The system combines clean design, informative content, and socially responsible features like tree plantation funding and carbon savings tracking to create a meaningful impact.
 
+From a user’s perspective, EcoVoltify is an eco-conscious e-commerce website where customers can explore and purchase energy-efficient products such as solar-charged batteries, LED lights, and insulation materials. The platform is designed to promote sustainable living by offering transparent information about each product's environmental impact, supported by a real-time carbon savings tracker and a live tree plantation counter. Users can log in, manage their accounts, browse categories, add items to their cart, make donations toward tree planting, and complete purchases through secure payment gateways like Stripe. Additional features like testimonials, a contact form, and an informative blog section enhance the user experience while promoting environmental awareness.
+
+From an admin’s perspective, EcoVoltify provides a complete backend dashboard for managing the platform. Administrators can add, update, and delete products, manage brand information, oversee user accounts, and view order and donation records. The admin panel is designed for ease of use, allowing smooth operation and content management without needing to interact directly with the database. Admins also monitor customer activities and ensure all transactions are processed securely, making it easier to run the platform effectively and scale it over time.
+
 ## 📌 Key Features
 
 - 🛒 **E-commerce Functionality:** Add to cart, checkout, login/signup, and secure payments
@@ -80,4 +84,15 @@ EcoVoltify was developed to address the gap between environmental awareness and 
 -Open XAMPP and start Apache & MySQL
 -Place the project folder inside htdocs directory
 -Access the app at http://localhost/ecovoltify
+
+
+**Some highlights from the project**
+![Homepage showing featured categories and welcome message](‪D:\homepage.jpgL)
+![Contact form with input fields for name, email, subject, and message, and , User testimonial section displaying submitted reviews](‪D:\forms.jpgL)
+![Dropdown menu showing product categories](‪D:\categoryList.jpg)
+![Product listing page displaying eco friendly home appliances](‪D:\productListing.jpg)
+![User login page with email and password fields](‪D:\login.jpg)
+![User signup form with fields for name, email, and password](‪‪D:\signup.jpg)
+![Chatbot popup providing navigation help and eco-friendly tips](‪‪D:\Chatbot.jpg)
+![Page contanins information about website goal and aim](‪‪D:\Aboutpage.jpg)
 
