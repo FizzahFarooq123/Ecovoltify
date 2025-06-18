@@ -1,0 +1,40 @@
+.card-img-top {
+    height: 200px;
+    object-fit: contain;
+    background: #f8f9fa;
+}
+
+.searchhhh {
+    padding-top: 80px; /* Add this line */
+    font-family: 'Poppins', sans-serif !important;
+    font-size: smaller;
+    padding-bottom: 80px;
+}
+
+.custom-learn-more-btn {
+  background-color: #4CAF50 !important; /* Pretty green */
+  color: white !important;
+  border: none !important;
+  padding: 10px 15px;
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.custom-learn-more-btn:hover {
+  background-color: #388E3C !important; /* Darker green */
+  transform: translateY(-2px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+    color: white;
+    /* padding: 20px; */
+    text-align: center;
+    margin-top: auto;  /* This pushes the footer to the bottom */
+}
+
