@@ -85,14 +85,3 @@ EcoVoltify was developed to address the gap between environmental awareness and 
 -Place the project folder inside htdocs directory
 -Access the app at http://localhost/ecovoltify
 
-
-**Some highlights from the project**
-![Homepage showing featured categories and welcome message](‪D:\homepage.jpgL)
-![Contact form with input fields for name, email, subject, and message, and , User testimonial section displaying submitted reviews](‪D:\forms.jpgL)
-![Dropdown menu showing product categories](‪D:\categoryList.jpg)
-![Product listing page displaying eco friendly home appliances](‪D:\productListing.jpg)
-![User login page with email and password fields](‪D:\login.jpg)
-![User signup form with fields for name, email, and password](‪‪D:\signup.jpg)
-![Chatbot popup providing navigation help and eco-friendly tips](‪‪D:\Chatbot.jpg)
-![Page contanins information about website goal and aim](‪‪D:\Aboutpage.jpg)
-
