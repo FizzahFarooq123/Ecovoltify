@@ -1,0 +1,336 @@
+body {
+    margin: 0;
+    padding-top: 70px; /* or height of your navbar */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Make the body and html take full height */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Footer styling */
+footer {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;  /* This pushes the footer to the bottom */
+}
+
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cart Heading */
+.cart-heading {
+    width: 100%;
+    text-align: left;
+    margin-top: 30px;
+    padding-left: 20px; /* Aligns with Product Image column width */
+
+}
+
+.cart-heading h1 {
+    font-size: 2rem;
+    display: inline-block;
+    position: relative;
+    color: #03230e;
+    margin: 0 0 30px 0;
+}
+
+.cart-heading h1::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 80px;
+    height: 1.5px;
+    background-color: #03230e;
+    border-radius: 2px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Ensures consistent column alignment */
+    margin-top: 10px;
+}
+
+thead {
+    border-bottom: 2px solid #ccc;
+}
+
+thead th {
+    font-size: 1.1rem;
+    color: #002b36;
+    text-align: left;
+    padding: 15px;
+    white-space: nowrap; /* Prevents text from breaking into two lines */
+
+}
+
+tbody td {
+    vertical-align: middle;
+    padding: 15px;
+    font-size: 1rem;
+    word-wrap: break-word;
+}
+
+/* Consistent row spacing */
+tr:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+
+/* Image size */
+/* td img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+} */
+
+td img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain; /* Ensures whole image fits inside */
+    background-color: #f0f0f0; /* Optional: adds neutral background */
+    padding: 5px; /* Optional: slight padding around image */
+    border-radius: 10px;
+    border: 1px solid #ddd; /* Subtle border for consistency */
+}
+
+/* Explicit column widths for alignment */
+thead th:nth-child(1),
+tbody td:nth-child(1) {
+    width: 120px; /* Image */
+}
+
+thead th:nth-child(2),
+tbody td:nth-child(2) {
+    width: 200px; /* Product Name */
+}
+
+thead th:nth-child(3),
+tbody td:nth-child(3),
+thead th:nth-child(4),
+tbody td:nth-child(4),
+thead th:nth-child(5),
+tbody td:nth-child(5) {
+    width: 120px; /* Price, Quantity, Total */
+}
+
+thead th:nth-child(6),
+tbody td:nth-child(6),
+thead th:nth-child(7),
+tbody td:nth-child(7) {
+    width: 100px; /* Action buttons */
+    text-align: center;
+}
+
+/* Headings inside cart (like subtotal, etc.) */
+.cart-container h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #03230e;
+}
+
+.cart-container h2 {
+    font-size: 1.8rem;
+    margin-top: 5px;
+    color: #083c3c;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.checkoutbtn {
+    background-color: #b2e7c0;
+    width: 250px;
+    color: #064d30;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.checkoutbtn:hover {
+    background-color: #98d6aa;
+    color: #000000 !important; 
+}
+
+.btn {
+    background-color: #75c99a;
+    color: white;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #60b283;
+}
+
+/* Quantity Input */
+input[type="number"] {
+    width: 60px;
+    padding: 6px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.cart-footer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;  /* Align the footer content to the right */
+}
+
+.cart-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align the content to the left of the container */
+    width: 100%;
+}
+
+.total-row {
+    display: flex;
+    width: 100%;
+    background-color: #edf8e3;
+    padding: 15px 0;
+    box-sizing: border-box;
+}
+
+.total-row .col {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.total-row h3 {
+    font-size: 1.5rem;
+    color: #000000; /* Adjust color for contrast */
+    margin: 0;
+}
+
+.checkout-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody tr {
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        padding: 10px;
+    }
+
+    tbody td {
+        padding: 10px;
+        text-align: right;
+        position: relative;
+        font-size: 0.95rem;
+        border-bottom: 1px solid #eee;
+    }
+
+    tbody td:last-child {
+        border-bottom: none;
+    }
+
+    tbody td::before {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        width: 50%;
+        white-space: nowrap;
+        font-weight: bold;
+        color: #03230e;
+    }
+
+    /* Targeting each column using nth-child */
+    tbody td:nth-child(1)::before { content: "Product Image"; }
+    tbody td:nth-child(2)::before { content: "Product Name"; }
+    tbody td:nth-child(3)::before { content: "Product Price"; }
+    tbody td:nth-child(4)::before { content: "Quantity"; }
+    tbody td:nth-child(5)::before { content: "Total Price"; }
+    tbody td:nth-child(6)::before { content: "Update"; }
+    tbody td:nth-child(7)::before { content: "Delete"; }
+
+    td img {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+    }
+
+    .total-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .checkout-container {
+        justify-content: center;
+    }
+
+    .checkoutbtn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cart-heading h1 {
+        font-size: 1.5rem;
+    }
+
+    .cart-container h2,
+    .cart-container h3 {
+        font-size: 1.2rem;
+    }
+
+    .btn,
+    .checkoutbtn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    input[type="number"] {
+        width: 50px;
+    }
+}
+
+
+
